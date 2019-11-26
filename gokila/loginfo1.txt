@@ -1,0 +1,5 @@
+DEBUG - this is debug
+INFO - this is info
+WARN - this is warning
+ERROR - this is error
+FATAL - this is fatal

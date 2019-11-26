@@ -1,0 +1,13 @@
+package com.demo;
+
+public class Count {
+ public int  countChar(String str,String search){
+	 
+	 
+	 
+	 
+	 
+	return 0;
+	 
+ }
+}

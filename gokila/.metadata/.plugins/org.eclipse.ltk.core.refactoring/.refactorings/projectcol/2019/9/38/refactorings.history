@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;dem2.pCK&apos; to &apos;dem2.pack&apos;&#x0D;&#x0A;- Original project: &apos;projectcol&apos;&#x0D;&#x0A;- Original element: &apos;projectcol/src/dem2.pCK&apos;&#x0D;&#x0A;- Renamed element: &apos;projectcol/src/dem2.pack&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;dem2.pCK&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;dem2.pCK" name="dem2.pack" qualified="false" references="true" stamp="1568615652821" textual="false" version="1.0"/>
+</session>

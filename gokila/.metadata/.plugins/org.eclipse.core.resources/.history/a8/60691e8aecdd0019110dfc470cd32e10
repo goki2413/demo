@@ -1,0 +1,42 @@
+package task.pack;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int i;
+	//	int x,y;
+		Student stud=new Student();
+		StudentDAO std=new StudentDAO();
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter the choice:");
+		int choice=s.nextInt();
+		if(choice==1){
+			System.out.println("inserting into table");
+			System.out.println("enter the id");
+			stud.setId(s.nextInt());
+		    System.out.println("enter the name");
+			stud.setName(s.next());
+			std.insert(stud);
+			
+		}
+		else if(choice==0){
+			System.out.println("updating the table");
+			System.out.println("enter the id");
+			stud.setId(s.nextInt());
+		  System.out.println("enter the name");
+			stud.setName(s.next());
+		    std.update(stud);
+			
+		}
+		else if(choice!=1 && choice!=0){
+			System.out.println("invalid option");
+		}
+			
+		}
+			
+		}
+	
+
+

@@ -1,0 +1,13 @@
+package com.demo;
+
+import java.util.Scanner;
+
+public class Main {
+	
+Scanner s=new Scanner(System.in);
+String str=s.next();
+char search=s.next().charAt(0);
+Count co=new Count();
+int c=co.countChar(str, search);
+
+}

@@ -1,0 +1,58 @@
+package com.hcl.pizza.test;
+
+import static org.junit.Assert.*;
+
+import java.sql.SQLException;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.hcl.pizza.bean.PizzaOrder;
+import com.hcl.pizza.dao.PizzaOrderDAO;
+
+public class PizzaTest {
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void Search() throws SQLException {
+		PizzaOrderDAO dao=new PizzaOrderDAO();
+		PizzaOrder porder=new PizzaOrder();
+	   porder.setOrderId(100);
+	     int orderid=porder.getOrderId();
+		int i=dao.Search(orderid);
+		assertEquals(1,i);		
+		
+		
+	}
+
+	@Test
+	public void DeleteOrder() throws SQLException {
+		PizzaOrderDAO dao=new PizzaOrderDAO();
+		PizzaOrder porder=new PizzaOrder();
+	     porder.setOrderId(42);
+	     int orderid=porder.getOrderId();
+		int i=dao.DeleteOrder(orderid);
+		assertEquals(1,i);		
+		
+		
+	}
+
+}

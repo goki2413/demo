@@ -1,0 +1,47 @@
+package demo.pack;
+
+
+
+class New_Thread implements Runnable{
+int i;
+
+	public void run() {
+		// TODO Auto-generated method stub
+		try{
+			for(int i=5;i>0;i--){
+				System.out.println("child"+i);
+				Thread.sleep(500);
+			}
+		}
+		catch(InterruptedException e){
+			System.out.println(e);
+		}
+		
+	
+	
+}
+public class RunnableInterface {
+
+	public void main(String[] args) {
+		
+		New_Thread obj=new New_Thread();
+		Thread t=new Thread(obj);
+		 t.start();
+		 try{
+				for(int i=0;i<5;i++){
+					System.out.println("main" +i);
+					Thread.sleep(100);
+				}
+		 }
+			catch(InterruptedException e){
+				System.out.println("main interruptes");
+			}
+				
+		 
+		 }
+	
+	}
+
+	}
+
+

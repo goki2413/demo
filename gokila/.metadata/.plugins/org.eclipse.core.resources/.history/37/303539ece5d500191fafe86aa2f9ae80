@@ -1,0 +1,10 @@
+package demo.pack;
+
+public class RunnableInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
